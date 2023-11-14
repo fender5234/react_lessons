@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./fonts/Montserrat-Light.woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(./fonts/Montserrat-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(./fonts/Montserrat-SemiBold.woff2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  background-image: url('./img/background-form.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.form__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.form__input {
+  padding: 12px 10px 12px 50px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.form__input::placeholder {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form__input:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+}
+
+.form__input:focus-visible {
+  outline: 1px solid #ffffff;
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__label::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 15px;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__label--login {
+  margin-bottom: 20px;
+}
+
+.form__label--login::before {
+  background-image: url('./img/svg/user-icon.svg');
+}
+
+.form__label--password::before {
+  background-image: url('./img/svg/lock-icon.svg');
+}
+
+.form__label-wrapper {
+  padding: 40px 0;
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  text-align: center;
+  color: #2148c0;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+
+.form__button:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+}
+
+.form__button:active {
+  background-color: #ffffffc5;
+}
+
+.form__forgot-pass {
+  display: block;
+  margin: 15px 0 0 auto;
+  text-align: right;
+  text-decoration: none;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.form__forgot-pass:hover {
+  text-decoration: underline;
+}
+
+.form__forgot-pass:active {
+  color: #ffffffc5;
+  text-decoration: underline;
+}
+
