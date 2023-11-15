@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot password</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Форма аутентификации</title>
   </head>
   <body>
     <main class="main">
       <div class="wrapper">
         <form action="" class="form">
-          <img class="form__image" src="./img/svg/icon-login.svg" alt="Иконка входа в личный кабинет" />
+          <img class="form__image" src="./img/svg/reset-pass.svg" alt="Иконка входа в личный кабинет" />
           <div class="form__label-wrapper">
             <label class="form__label form__label--login">
               <input type="email" class="form__input" placeholder="username" required />
             </label>
-            <label class="form__label form__label--password">
-              <input type="password" class="form__input" placeholder="password" required />
+            <label class="form__label form__label--reset-password">
+              <input type="text" class="form__input" placeholder="email" required />
             </label>
           </div>
-          <button class="form__button" type="submit">login</button>
-          <a class="form__forgot-pass" href="./forgot-pass.html">Forgot password?</a>
+          <button class="form__button" type="submit">reset password</button>
+          <a class="form__forgot-pass" href="./index.html">Go back</a>
         </form>
       </div>
     </main>

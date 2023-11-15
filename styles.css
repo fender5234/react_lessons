@@ -93,6 +93,10 @@ body {
   display: block;
 }
 
+.form__label::before {
+  background-repeat: no-repeat;
+}
+
 .form__label--login {
   margin-bottom: 20px;
 }
@@ -103,6 +107,10 @@ body {
 
 .form__label--password::before {
   background-image: url('./img/svg/lock-icon.svg');
+}
+
+.form__label--reset-password::before {
+  background-image: url('./img/svg/email-icon.svg');
 }
 
 .form__label-wrapper {
@@ -151,4 +159,3 @@ body {
   color: #ffffffc5;
   text-decoration: underline;
 }
-
