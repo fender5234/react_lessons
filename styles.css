@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -69,7 +70,7 @@ body {
 }
 
 .form__input:hover {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .form__input:focus-visible {
@@ -134,7 +135,7 @@ body {
 }
 
 .form__button:hover {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3)
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .form__button:active {
@@ -158,4 +159,70 @@ body {
 .form__forgot-pass:active {
   color: #ffffffc5;
   text-decoration: underline;
+}
+
+.popup-body {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-body--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-body__wrapper {
+  padding: 40px 20px 10px;
+  height: 350px;
+  width: 430px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+
+.popup-body__title {
+  margin: 30px auto 0;
+  padding: 0;
+  color: #2148c0;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 46px;
+  text-align: center;
+}
+
+.popup-body__title--forgot {
+  font-size: 22px;
+}
+
+.popup-body__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.popup-body__button {
+  display: block;
+  width: 30%;
+  padding: 12px 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #2148c0;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+  margin: 30px auto 0;
 }

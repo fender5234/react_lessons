@@ -12,21 +12,29 @@
   <body>
     <main class="main">
       <div class="wrapper">
-        <form action="" class="form">
+        <form class="form">
           <img class="form__image" src="./img/svg/icon-login.svg" alt="Иконка входа в личный кабинет" />
           <div class="form__label-wrapper">
             <label class="form__label form__label--login">
-              <input type="email" class="form__input" placeholder="username" required />
+              <input type="email" class="form__input" id="login" placeholder="any email" required />
             </label>
             <label class="form__label form__label--password">
-              <input type="password" class="form__input" placeholder="password" required />
+              <input type="password" class="form__input" id="pass" placeholder="any password" required />
             </label>
           </div>
           <button class="form__button" type="submit">login</button>
           <a class="form__forgot-pass" href="./forgot-pass.html">Forgot password?</a>
         </form>
       </div>
+      <div class="popup-body">
+        <div class="popup-body__wrapper">
+          <img class="popup-body__image" src="./img/svg/icon-check.svg" alt="картинка зеленая галочка" />
+          <h1 class="popup-body__title">success!</h1>
+          <button class="popup-body__button" type="button">ok</button>
+        </div>
+      </div>
     </main>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
 

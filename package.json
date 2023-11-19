@@ -1,0 +1,16 @@
+{
+  "name": "react_lessons",
+  "version": "1.0.0",
+  "description": "В этом репозитории я буду хранить, домашние задания с курса по реакт от компании YLAB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server -w server/db.json -p 3005"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fetch-mock": "^9.11.0",
+    "json-server": "^0.17.4"
+  }
+}

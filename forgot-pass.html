@@ -16,16 +16,24 @@
           <img class="form__image" src="./img/svg/reset-pass.svg" alt="Иконка входа в личный кабинет" />
           <div class="form__label-wrapper">
             <label class="form__label form__label--login">
-              <input type="email" class="form__input" placeholder="username" required />
+              <input type="text" class="form__input" id="pass" placeholder="username" required />
             </label>
             <label class="form__label form__label--reset-password">
-              <input type="text" class="form__input" placeholder="email" required />
+              <input type="email" class="form__input" id="login" placeholder="email" required />
             </label>
           </div>
           <button class="form__button" type="submit">reset password</button>
           <a class="form__forgot-pass" href="./index.html">Go back</a>
         </form>
       </div>
+      <div class="popup-body">
+        <div class="popup-body__wrapper">
+          <img class="popup-body__image" src="./img/svg/icon-check.svg" alt="картинка зеленая галочка" />
+          <h1 class="popup-body__title popup-body__title--forgot">Information about restoring access will be sent to your email.</h1>
+          <button class="popup-body__button" type="button">ok</button>
+        </div>
+      </div>
+      <script src="./index.js" type="module"></script>
     </main>
   </body>
 </html>
